@@ -62,7 +62,6 @@ namespace Adder
                 Directory.CreateDirectory(strTmp + "\\PC");
                 Directory.CreateDirectory(strTmp + "\\HANG");
                 Directory.CreateDirectory(strTmp + "\\ANIM");
-                tbScene.Text = "";
                 //Template Files
                 File.Copy(basedirectory + "\\DEVS\\maxTemplate.max", strTmp + $"\\ANIM\\" + tbScene.Text + "_ANIM_01.max");
                 File.Copy(basedirectory + "\\DEVS\\maxTemplate.max", strTmp + $"\\RENDER\\" + tbScene.Text + "_RENDER_01.max");
