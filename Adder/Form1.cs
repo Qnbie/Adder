@@ -77,9 +77,8 @@ namespace Adder
             {
                 strTmp = basedirectory + "\\MODELS" + "\\" + tbModel.Text.ToUpper();
                 Directory.CreateDirectory(strTmp);
-                Directory.CreateDirectory(strTmp + "\\MODEL");
-                File.Copy(basedirectory + "\\DEVS\\maxTemplate.max", strTmp + $"\\MODEL\\" + tbModel.Text + "_MODEL_01.max");
-                Directory.CreateDirectory(strTmp + "\\TEXT");
+                File.Copy(basedirectory + "\\DEVS\\maxTemplate.max", strTmp + $"\\" + tbModel.Text + "_MODEL_01.max");
+                Directory.CreateDirectory(strTmp + "\\MAPS");
                 Directory.CreateDirectory(strTmp + "\\MARI");
                 tbModel.Text = "";
             }
